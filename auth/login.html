@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IdeaHub | Đăng nhập</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <div class="container">
+      <nav class="top-nav">
+        <a class="logo" href="../index.html">Idea<span>Hub</span></a>
+        <div class="nav-links">
+          <a href="register.html">Đăng ký</a>
+          <a href="forgot-password.html">Quên mật khẩu</a>
+        </div>
+      </nav>
+
+      <section class="auth-layout">
+        <article class="glass-card auth-promo">
+          <div class="kicker">WELCOME BACK</div>
+          <h1>Đăng nhập và tiếp tục dự án của bạn.</h1>
+          <p class="lead">Giao diện rõ ràng, màu sắc nổi bật và điều hướng trực quan để tiết kiệm thời gian đăng nhập.</p>
+          <ul class="auth-bullet">
+            <li>🔐 Lớp giao diện bảo mật + thao tác đơn giản.</li>
+            <li>⚡ Truy cập nhanh dashboard sau khi xác thực.</li>
+            <li>🎨 Đồng bộ trải nghiệm với trang chủ và dashboard.</li>
+          </ul>
+        </article>
+
+        <form class="auth-card" action="../dashboard/index.html" method="get">
+          <h2>Đăng nhập</h2>
+          <p class="sub">Nhập thông tin để tiếp tục.</p>
+
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="ban@email.com" required />
+            </div>
+
+            <div class="input-group input-row">
+              <label for="password">Mật khẩu</label>
+              <input id="password" name="password" type="password" placeholder="••••••••" required />
+              <button class="toggle-pass" data-target="password" type="button">Hiện</button>
+            </div>
+
+            <div class="inline-between">
+              <label><input type="checkbox" /> Ghi nhớ tôi</label>
+              <a href="forgot-password.html">Quên mật khẩu?</a>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Đăng nhập vào dashboard</button>
+            <p class="muted centered">Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a>.</p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

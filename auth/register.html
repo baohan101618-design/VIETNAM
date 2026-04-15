@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IdeaHub | Đăng ký</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <div class="container">
+      <nav class="top-nav">
+        <a class="logo" href="../index.html">Idea<span>Hub</span></a>
+        <div class="nav-links">
+          <a href="login.html">Đăng nhập</a>
+          <a href="forgot-password.html">Quên mật khẩu</a>
+        </div>
+      </nav>
+
+      <section class="auth-layout">
+        <article class="glass-card auth-promo">
+          <div class="kicker">CREATE ACCOUNT</div>
+          <h1>Tạo tài khoản để đưa ý tưởng ra thế giới.</h1>
+          <p class="lead">Thiết kế tập trung vào sự dễ hiểu, giúp người dùng mới hoàn tất đăng ký trong chưa đến một phút.</p>
+          <ul class="auth-bullet">
+            <li>🧩 Bố cục form mạch lạc theo đúng thứ tự thông tin.</li>
+            <li>✅ Kiểm tra mật khẩu và xác nhận ngay trên giao diện.</li>
+            <li>🌈 Màu sắc hiện đại tạo cảm hứng sáng tạo từ bước đầu.</li>
+          </ul>
+        </article>
+
+        <form class="auth-card" id="register-form" action="../dashboard/index.html" method="get">
+          <h2>Đăng ký tài khoản</h2>
+          <p class="sub">Miễn phí, nhanh gọn và sẵn sàng sử dụng ngay.</p>
+          <div id="register-message" class="msg-box"></div>
+
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="name">Họ và tên</label>
+              <input id="name" type="text" placeholder="Nguyễn Văn A" required />
+            </div>
+
+            <div class="input-group">
+              <label for="register-email">Email</label>
+              <input id="register-email" type="email" placeholder="ban@email.com" required />
+            </div>
+
+            <div class="input-group input-row">
+              <label for="register-password">Mật khẩu</label>
+              <input id="register-password" type="password" placeholder="Tối thiểu 8 ký tự" required />
+              <button class="toggle-pass" data-target="register-password" type="button">Hiện</button>
+            </div>
+
+            <div class="input-group input-row">
+              <label for="confirm-password">Xác nhận mật khẩu</label>
+              <input id="confirm-password" type="password" placeholder="Nhập lại mật khẩu" required />
+              <button class="toggle-pass" data-target="confirm-password" type="button">Hiện</button>
+            </div>
+
+            <label class="muted"><input type="checkbox" required /> Tôi đồng ý với điều khoản và chính sách bảo mật.</label>
+            <button class="btn btn-primary" type="submit">Tạo tài khoản và vào dashboard</button>
+            <p class="muted centered">Đã có tài khoản? <a href="login.html">Đăng nhập</a>.</p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
